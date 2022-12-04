@@ -1,0 +1,9 @@
+version: '3'
+services:
+  pca:
+    build: ./
+    working_dir: /var/local/
+    volumes:
+      - ./.:/var/local/
+    ports:
+      - "8080:8080"
