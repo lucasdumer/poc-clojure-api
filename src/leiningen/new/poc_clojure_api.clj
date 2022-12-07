@@ -14,6 +14,7 @@
               ::http/resource-path "/public"
               ::http/type          :jetty
               ::http/port          8080
+              ::http/host          "0.0.0.0"
               ::http/allowed-origins {:creds true :allowed-origins (constantly true)}})
 
 (defonce runnable-service (http/create-server service))
