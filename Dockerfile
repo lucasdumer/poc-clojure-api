@@ -4,4 +4,4 @@ WORKDIR /var/local/
 
 EXPOSE 8080
 
-ENTRYPOINT lein run
+ENTRYPOINT lein run -p 8080
